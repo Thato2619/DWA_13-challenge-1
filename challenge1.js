@@ -47,3 +47,8 @@ console.log(mapToAlphabets(numSeq));
 
 //this is totally inspired by https://www.tutorialspoint.com/map-numbers-to-characters-in-javascript 
 
+
+//Using toSorted to sort all provinces alphabetically.
+
+let sortedProvinces= provinces.sort();
+console.log(sortedProvinces);
