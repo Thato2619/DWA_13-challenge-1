@@ -21,4 +21,29 @@ const upperProvinces = provinces.map(function(province) {
 
 console.log(upperProvinces);
 
+//Create a new array with map that has the amount of characters in each name. The result should be: [6, 9, 11, 5, 8, 7, 7]
+const numSeq = [6, 9, 11, 5, 8, 7,7];
+const mapToAlphabets = numSeq => {
+    const numStr = '' + numSeq;
+    let res = [];
+    const shoveElements = (left, right) => {
+        if(!left.length) {
+            res.push(right.map(el => {
+                return (+el + 9).toString(36);
+            })).join('');
+        }
+        return;
+    };
+    if(+left[0] > 0){
+        shoveElements(left.slice(1), right.concat(left[0]));
+    }
+    if( left.length >= 2 && +(left.slice(0, 2)) <= 26){
+        shoveElements(left.slice(2), right.concat(left(0,2)))
+    };
+    shoveElements(numStr, [])
+    return res;
+}
+console.log(mapToAlphabets(numSeq));
+
+//this is totally inspired by https://www.tutorialspoint.com/map-numbers-to-characters-in-javascript 
 
