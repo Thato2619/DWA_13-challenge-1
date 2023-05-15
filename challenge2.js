@@ -49,4 +49,9 @@ const crew = Object.entries(
     })
 )
 
-let 
+let minNum = parseInt(products[0]);
+let maxNum = products[4];
+
+const totalSum = (min , max) => min + max;
+
+console.log(products.reduce(totalSum));
