@@ -63,3 +63,11 @@ console.log(filteredProvince);
 let booleanName = names.map(e => e === 's',  true)
 console.log(booleanName);
 
+//reduce 
+
+const nameProvinces = names.reduce((p, c) =>{
+    console.log(`${names}: ${p}`)
+    console.log(`${provinces}: ${c}`)
+
+    return p + c 
+}, 0)
