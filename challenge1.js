@@ -52,3 +52,10 @@ console.log(mapToAlphabets(numSeq));
 
 let sortedProvinces= provinces.sort();
 console.log(sortedProvinces);
+
+
+//Use filter to remove all provinces that have the word Cape in them. After filtering the array, return the amount of provinces left. The final value should be 3
+let filteredProvince = provinces.filter((province) => province === 'Cape');
+
+console.log(filteredProvince)
+
