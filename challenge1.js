@@ -1,5 +1,5 @@
-const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State']
-const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
+const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State'];
+const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie'];
 
 //use forEach statement and console log all names 
 names.forEach(name =>  console.log(name));
@@ -57,5 +57,9 @@ console.log(sortedProvinces);
 //Use filter to remove all provinces that have the word Cape in them. After filtering the array, return the amount of provinces left. The final value should be 3
 let filteredProvince = provinces.filter((province) => province === 'Cape');
 
-console.log(filteredProvince)
+console.log(filteredProvince);
+
+//Create a boolean array by using map and some to determine whether a name contains an S character. The result should be [true, true, false, true, false, true, false]
+let booleanName = names.map(e => e === 's',  true)
+console.log(booleanName);
 
