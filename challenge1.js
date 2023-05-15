@@ -71,3 +71,6 @@ const nameProvinces = names.reduce((p, c) =>{
 
     return p + c 
 }, 0)
+
+
+
