@@ -49,9 +49,20 @@ const crew = Object.entries(
     })
 )
 
+//Using only Object.entries and reduce recreate the object with the exact same values. However, the following object keys should be changed in the new array:
+
 let minNum = parseInt(products[0]);
 let maxNum = products[4];
 
 const totalSum = (min , max) => min + max;
 
 console.log(products.reduce(totalSum));
+
+const result = products.reduce((name , cost ) => {
+    const name = cost.price
+    if (name[name] ==  null) name[name] = []
+    name [name].push(cost)
+    return name
+}, {})
+
+console.log(result)
