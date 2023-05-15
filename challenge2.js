@@ -40,3 +40,13 @@ const products = [
 /**
  * Use reduce to concatenate all product names to create the following string: banana, mango, potato, avocado, coffee and tea
  */
+
+let newProduct = ['banana, mango, potato, avocado, coffee, tea']
+const crew = Object.entries(
+    products.reduce((a, {product}) => {
+        let addedProduct = products.concat(newProduct)
+        return addedProduct;
+    })
+)
+
+let 
